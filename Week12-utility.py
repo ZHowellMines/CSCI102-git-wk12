@@ -35,3 +35,11 @@ def ScoreFinder(player_names_list,player_score_list,player_to_find):
             break
     if player_presence_test == 0:
         print('OUTPUT player not found')
+
+def Union(u_list1,u_list2):
+    joined_list = u_list1 + u_list2
+    joined_list_no_dupes = []
+    for entry in joined_list:
+        if entry not in joined_list_no_dupes:
+            joined_list_no_dupes.append(entry)
+    return joined_list_no_dupes
