@@ -5,3 +5,10 @@
 
 def PrintOutput(string):
     print('OUTPUT', string)
+
+def LoadFile(filename):
+    with open(filename, 'r') as text:
+        list_0 = []
+        for line in text:
+            list_0.append(line.rstrip('\n'))
+    return list_0
