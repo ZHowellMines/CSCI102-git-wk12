@@ -50,3 +50,10 @@ def Intersection(func_list1,func_list2):
         if element in func_list2:
             intersected.append(element)
     return intersected
+
+def NotIn(ni_list1,ni_list2):
+    notin_list = []
+    for name in ni_list1:
+        if name not in ni_list2:
+            notin_list.append(name)
+    return notin_list
