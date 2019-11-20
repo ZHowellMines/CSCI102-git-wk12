@@ -43,3 +43,10 @@ def Union(u_list1,u_list2):
         if entry not in joined_list_no_dupes:
             joined_list_no_dupes.append(entry)
     return joined_list_no_dupes
+
+def Intersection(func_list1,func_list2):
+    intersected = []
+    for element in func_list1:
+        if element in func_list2:
+            intersected.append(element)
+    return intersected
