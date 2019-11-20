@@ -12,3 +12,9 @@ def LoadFile(filename):
         for line in text:
             list_0.append(line.rstrip('\n'))
     return list_0
+
+def UpdateString(string1,string2,index_int):
+    string1_list = list(string1)
+    string1_list[index_int] = string2
+    updated_string1 = ''.join(string1_list)
+    print('OUTPUT', updated_string1)
