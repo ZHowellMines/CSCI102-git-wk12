@@ -25,3 +25,13 @@ def FindWordCount(wc_list,wc_string):
         if word == wc_string:
             word_count += 1
     return word_count
+
+def ScoreFinder(player_names_list,player_score_list,player_to_find):
+    player_presence_test = 0
+    for index, name in enumerate(player_names_list):
+        if player_to_find.lower() == name.lower():
+            print('OUTPUT',name, 'got a score of', player_score_list[index])
+            player_presence_test += 1
+            break
+    if player_presence_test == 0:
+        print('OUTPUT player not found')
